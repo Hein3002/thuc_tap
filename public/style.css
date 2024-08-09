@@ -1,0 +1,285 @@
+*{ 
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  box-sizing:border-box;
+ }
+ .root_html {  
+  height: 100vh;
+  background: #D1D8C5;
+  overflow: auto;
+ }
+ button:hover{
+   color: #EEEEEE;
+   background: #615EFC;
+ }
+ a:hover{
+   color: #7E8EF1;
+ }
+ h3 {
+   font-size: 24px;
+ }
+ #overlay {
+   position: fixed;
+   display: none;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: rgba(0,0,0,0.5);
+   z-index: 2;
+   cursor: pointer;
+ }
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+}.container_search {
+  width: 100%;
+  height: 100%;
+  background: #D1D8C5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container_search .action {
+  margin-top: 16px;
+}
+.container_login {
+  width: 100%;
+  height: 100%;
+  background: #D1D8C5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container_login .title{
+  color: #FF4E88;
+}
+.container_login .search_profile {
+  margin-bottom: 60px;
+  font-weight: 600;
+  color: #FF4E88;
+}
+.profile, .action {
+  display: flex;
+  width: fit-content;
+  gap: 20px;
+}
+.profile {
+  margin-bottom: 20px;
+}
+.profile input {
+  padding: 10px;
+  background: #EEEEEE;
+  border-radius: 5px;
+  color: #333;
+}
+.action  a{
+  padding: 2px;
+  border-radius: 5px;
+}
+.hien-input {
+  padding: 10px;
+  background: #EEEEEE;
+  border-radius: 5px;
+  color: #333;
+}
+/* sidebar */
+.hein_sidebar {
+  position: relative;
+  width: 20%;
+  height: 100%;
+  background: #F1E5D1;
+  padding-top: 30px;
+  z-index: 10;
+  margin-right: 10px;
+}
+.hein_sidebar_icon {
+  padding-top: 10px;
+  display: none;
+}
+.hein_sidebar_icon ion-icon{
+  font-size: 25px;
+}
+.hein_close_sidebar_icon {
+  position: absolute;
+  right: 2px;
+  top: 10px;
+  font-size: 25px;
+  display: none;
+}
+.hein_sidebar_menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: fit-content;
+  overflow-y:auto;
+  gap: 15px;
+  list-style: none;
+}
+.hein_menu_item {
+  text-align: center;
+  border-radius: 5px;
+  width: 90%;
+  padding: 20px;
+  background: #EEEEEE;
+  text-decoration: none;
+}
+
+
+ /* table form */
+ .submit {
+  padding: 10px 20px;
+  width: fit-content;
+  margin: 4px;
+  border-radius: 5px;
+  color: #333;
+ }
+ .lank_content {
+  flex: 1;
+  padding-top: 30px;
+ }
+ .lank_permission {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  overflow-x: auto;
+ }
+ .lank_selectd_date {
+   float: left;
+   overflow-x: auto;
+ }
+ .lank_selectd_date input {
+   padding: 10px 25px;
+   border-radius: 5px;
+   background: #EEEEEE;
+   margin: 0 5px;
+ }
+ .search_btn {
+   padding: 10px 15px;
+   border-radius: 5px;
+ }
+.lank-form {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.lank-form>input {
+  width: 300px;
+  margin: 4px;
+}
+
+.lank-form>.action {
+  margin: 4px;
+  padding: 4px 8px;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 4px;
+  cursor: pointer;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+tr:hover {
+  background-color: #D1D8C5;
+}
+.lank-div{
+  padding-top:30px;
+}
+/* table form */
+.lank-table{
+	width:100%;
+  padding:4px;
+}
+.lank-form{
+	display:flex;
+  flex-direction:column;
+  gap:4px;
+}
+.lank-form>input{
+	width:300px;
+  margin:4px;
+}
+.lank-form>.action{
+	margin:4px;
+  padding:4px 8px;
+}
+th,td{
+	text-align:center;
+  padding:4px;
+  cursor:pointer;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+tr:hover{
+	background-color:#D1D8C5;
+}
+
+/* trang tim kiem */
+.content{
+	display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  padding:24px;
+  width:100%;
+}
+.input{
+	border:none;
+  margin:4px;
+  background: #EEEEEE;
+  border-radius:12px;
+  padding:8px 12px;
+  border-color: #EEEEEE;
+}
+textarea{
+	width:99%;
+  min-height:300px;
+}
+
+
+/* reponesive */
+@media only screen and (max-width: 600px) {
+  .profile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .hein_sidebar {
+    transform: translateX(-100%);
+    padding: 40px 20px;
+    position: absolute;
+    width: 65%;
+    transition: all 0.5s;
+  }
+  .hein_menu_item {
+    width: 100%;
+  }
+  .hein_sidebar_icon {
+    display: block;
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  .lank_selectd_date {
+    display: flex;
+    overflow: auto;
+  }
+}
+
